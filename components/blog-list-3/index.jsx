@@ -8,59 +8,56 @@ import BreadCrumbBlog from "./BreadCrumbBlog";
 import Blog from "./Blog";
 import SearchMap from './searchMap'
 
-const index = ({data}) => {
+const index = ({ data }) => {
   return (
     <>
-     
+
       <Header />
 
-    
+
       <MobileMenu />
 
-     
+
       <PopupSignInUp />
 
 
 
 
-<SearchMap/>
+      <SearchMap />
 
-  
-       <section className="blog_post_container bgc-f7">
+
+      <section className="blog_post_container bgc-f7">
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
               <BreadCrumbBlog />
             </div>
           </div>
-          
+
+          {data?.length > 0 ? 
 
           <div className="row">
             <div className="col-lg-12">
               <div className="row">
                 <Blog data={data} />
-              
-              </div>
-            
- 
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="mbp_pagination mt20">
-                    <Pagination />
-                  </div>
-         
-                </div>
-              </div> 
-          
-            </div>
-            
-          </div>
-          
-        </div>
-       
-      </section> 
 
-    
+              </div>
+
+            </div>
+
+          </div>
+
+:
+<div className=" text-3xl text-red-600 font-semibold">لا يوجد أي عناصر</div>
+          }
+
+
+
+        </div>
+
+      </section>
+
+
       {/* <section className="footer_one">
         <div className="container">
           <div className="row">
@@ -69,7 +66,7 @@ const index = ({data}) => {
         </div>
       </section>  */}
 
-    
+
     </>
   );
 };

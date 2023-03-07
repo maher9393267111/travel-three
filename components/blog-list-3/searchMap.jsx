@@ -9,18 +9,19 @@ import MapData from '../../mapFiles/faatures.json'
 
 
 const markers = [
-  {
-    markerOffset: -3,
-     name: "turkey",
-    coordinates: [77.630554, 17.422222]
-  },
-  { markerOffset: 15, name: "turkey", coordinates: [38.630554, 27.422222] },
-  { markerOffset: 15, name: "pakistan", coordinates: [38.630554, 74.329376] },
-  { markerOffset: 15, name: "kirgizistan", coordinates: [40.166810, 38.089420] },
-  { markerOffset: 15, name: "croatia", coordinates: [45.099998, 15.200000] },
-  { markerOffset: 15, name: "serbia", coordinates: [44.016521, 21.005859] },
-  { markerOffset: 15, name: "saudi", coordinates: [23.885942,45.079163 ] },
-  { markerOffset: 15, name: "emirates", coordinates: [25.0657,55.17128 ] },
+  // {
+  //   markerOffset: -3,
+  //    name: "turkey",
+  //   coordinates: [77.630554, 17.422222]
+  // },
+  // 38.630554, 27.422222
+  { markerOffset: 15, name: "turkey", coordinates: [ 27.422222 ,38.630554,] },
+  { markerOffset: 15, name: "pakistan", coordinates: [74.329376 , 38.630554] },
+  { markerOffset: 15, name: "kirgizistan", coordinates: [38.089420 , 40.166810] },
+  { markerOffset: 15, name: "croatia", coordinates: [15.200000 , 45.099998] },
+  { markerOffset: 15, name: "serbia", coordinates: [ 21.005859, 44.016521] },
+  { markerOffset: 15, name: "saudi", coordinates: [45.079163 ,23.885942 ] },
+  { markerOffset: 15, name: "emirates", coordinates: [55.17128 ,25.0657] },
 
 ];
 
@@ -77,7 +78,10 @@ return (
       </Geographies>
 
       {markers.map(({ name, coordinates, markerOffset }) => (
-        <Marker key={name} coordinates={coordinates}>
+        <Marker 
+        onClick={()=> setLocation({name:name})}
+        className=" cursor-pointer"
+        key={name} coordinates={coordinates}>
           <g
             fill="none"
             stroke="#FF5533"
@@ -95,7 +99,7 @@ return (
             y={markerOffset}
             style={{ fontFamily: "system-ui", fill: "#5D5A6D"  , color: "#7b5151" , cursor: "pointer" }}
           >
-            {name}
+            {/* {name} */}
           </text>
         </Marker>
       ))}
