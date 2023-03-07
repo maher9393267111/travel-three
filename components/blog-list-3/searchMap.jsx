@@ -49,9 +49,9 @@ console.log('country--->' , selected , country?.name)
 return (
 
 
-    <div className=" h-[800px]">
+    <div className="hidden md:block h-[0px]  md:h-[800px]">
     <ComposableMap 
-    className='hidden  md:block  text-black mt-24 md:h-[900px]     bg-blue-500 w-100 border-green-400 border-2'
+    className='   text-black mt-24 md:h-[900px]     bg-blue-500 w-100 border-green-400 border-2'
     >
       <Geographies geography={MapData}>
         {({ geographies }) =>
