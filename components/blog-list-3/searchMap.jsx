@@ -11,7 +11,7 @@ import MapData from '../../mapFiles/faatures.json'
 const markers = [
   {
     markerOffset: -3,
-     name: "tutkey",
+     name: "turkey",
     coordinates: [77.630554, 17.422222]
   },
   { markerOffset: 15, name: "turkey", coordinates: [38.630554, 27.422222] },
