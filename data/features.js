@@ -66,7 +66,7 @@ export const featuresData =  [
         title:' Patagonia بمناسبة يوم المرأة تهنئة عطرة من شركه ',
         featurecorner:'عروض' ,
         img:'/assets/images/service-imgs/feature-beauty.jpeg',
-        link:" https://www.facebook.com/Patagonia.tourism?mibextid=ZbWKwl" ,
+        link:"https://butikatnaa.com/maintenance-page/" ,
         text : "  بكثير من الوفاء لمشوار العطاء الطّويل نزفّ التّهاني  إلى تلك السّيدة الفاضلة، إلى كلّ أم و اخت وزوجه وابنه في العالم سائلين الله تعالى أن يُبارك في الأعمار، وأن يحفظكنّ بعين الرّعاية  وبهذه المناسبة نقدم هدايا تذكارية لعملاء Patagonia لمده شهر من تاريخ اليوم"
        
     ,
