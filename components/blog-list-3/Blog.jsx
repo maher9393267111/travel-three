@@ -1,5 +1,6 @@
 import Link from "next/link";
 import blogContent from "../../data/blogs";
+import parse from 'html-react-parser';
 
 const Blog = ({data:blogs}) => {
 
@@ -112,7 +113,11 @@ const parseHtml = (desc) => {
                     <a href="#">   {item.date}</a>
                   </li>
                 </ul>
-                <p> { parseHtml(item?.description)}...</p>
+                <p> 
+                  {/* { parseHtml(item?.description)}... */}
+                  
+                  {/* {parse(item?.description)} */}
+                  </p>
               </div>
              
 
