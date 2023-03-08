@@ -112,14 +112,14 @@ const FeaturedProperties = () => {
                 <div className="tc_content">
                   <p className="text-thm">{item.type}</p>
                   <h4>
-                    <Link href={`/`}>
+                    <Link href={`${item?.link}`}>
                       <a>{item.title}</a>
                     </Link>
                   </h4>
-                  {/* <p>
-                    <span className="flaticon-placeholder"></span>
-                    {item.location}
-                  </p> */}
+                  <p>
+                    <span dir="rtl" className="  font-semibold   font-mono"></span>
+                    {item?.text}
+                  </p>
 
                   {/* <ul className="prop_details mb0">
                     {item.itemDetails.map((val, i) => (
