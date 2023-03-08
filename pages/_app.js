@@ -9,6 +9,7 @@ import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import "node_modules/video-react/dist/video-react.css"; // import css
 import Head from "next/head";
+import { useState , useEffect } from "react";
 
 
 if (typeof window !== "undefined") {
@@ -16,8 +17,21 @@ if (typeof window !== "undefined") {
 }
 
 function MyApp({ Component, pageProps }) {
+
+
+  const [isSSR, setIsSSR] = useState(true);
+
+  useEffect(() => {
+    setIsSSR(false);
+  }, []);
+
+
+
+
+
   return (
     <>
+     {!isSSR && (
      <StateContextProvider>
       <Seo
         font={
@@ -25,6 +39,7 @@ function MyApp({ Component, pageProps }) {
         }
 
 
+   
 
       />
 
@@ -53,6 +68,7 @@ function MyApp({ Component, pageProps }) {
         theme="dark"
       />
       </StateContextProvider>
+     )}
     </>
   );
 }
