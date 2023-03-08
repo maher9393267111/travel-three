@@ -37,7 +37,7 @@ const FeaturedProperties = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -45,7 +45,7 @@ const FeaturedProperties = () => {
       {
         breakpoint: 568,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
