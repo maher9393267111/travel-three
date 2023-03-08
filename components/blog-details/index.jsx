@@ -3,6 +3,10 @@ import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import Footer from "../../components/common/footer/Footer";
 import Header from "../home-3/Header";
 import MobileMenu from "../../components/common/header/MobileMenu";
+import parse from 'html-react-parser';
+// import ReactQuill from "react-quill";
+import dynamic from "next/dynamic";
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false })
 
 
 import BreadCrumb2 from "./BreadCrumb2";
@@ -28,7 +32,7 @@ const title = (data) => {
 // }
 
 
-const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
+// const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
 
 
 
@@ -107,16 +111,16 @@ const parsedHtml = data?.description.replace(/(<([^>]+)>)/gi, '');
 
                   <div className="details">
                     <p className="mb30">
-                      {parsedHtml}
-                    {/* {getText(data?.description)} */}
-                      {/* { description(data?.description)}... */}
-                      {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis mollis et sem sed sollicitudin. Donec non odio neque.
-                      Aliquam hendrerit sollicitudin purus, quis rutrum mi
-                      accumsan nec. Quisque bibendum orci ac nibh facilisis, at
-                      malesuada orci congue. Nullam tempus sollicitudin cursus.
-                      Ut et adipiscing erat. Curabitur this is a text link
-                      libero tempus congue. */}
+                      {/* {parsedHtml} */}
+
+                      {/* <ReactQuill
+                className="desc"
+                readOnly
+                value={data?.description}
+                theme="bubble"
+              /> */}
+                 {parse(data?.description)}
+               
                     </p>
                  
                   </div>
