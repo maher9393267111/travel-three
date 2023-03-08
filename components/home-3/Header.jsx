@@ -31,18 +31,20 @@ const Header = () => {
         <Link href="/">
           <a className="navbar_brand float-start dn-smd">
             <img
-              className="logo1 img-fluid"
-              // src="/assets/images/ogle-color-logo.png"
-              src=  '/assets/images/service-imgs/logoproject.jpeg'
+              className="logo1 img-fluid w-[155px]   h-[66px]"
+             
+              // src=  '/assets/images/service-imgs/logoproject.jpeg'
+              src=  '/assets/images/service-imgs/this.jpeg'
               alt="header-logo2.png"
             />
             <img
-              className="logo2 img-fluid"
-              // src="/assets/images/ogle-color-logo.png"
-              src=  '/assets/images/service-imgs/logoproject.jpeg'
+              className="logo2 img-fluid w-[155px]   h-[66px]"
+              
+              // src=  '/assets/images/service-imgs/logoproject.jpeg'
+                src=  '/assets/images/service-imgs/this.jpeg'
               alt="header-logo2.png"
             />
-            <span className=" mt-[17px]">Patagonia</span>
+            {/* <span className=" mt-[17px]">Patagonia</span> */}
           </a>
         </Link>
         {/* site logo brand */}

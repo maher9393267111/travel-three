@@ -181,13 +181,13 @@ const MobileMenuContent = () => {
           <Link href="/">
             <a className="sidebar-header-inner">
               <img
-                className="nav_logo_img  w-[70px]  h-[70px] img-fluid mt20 object-contain"
+                className="nav_logo_img  w-[170px]  h-[88px] img-fluid mt20 object-contain"
                  src=  '/assets/images/service-imgs/logo-png-here.jpeg'
                  
                 //  src="/assets/images/ogle-color-logo.png"
                 alt="header-logo.png"
               />
-              <span className="brand-text">Patagonia</span>
+              {/* <span className="brand-text">Patagoniaa</span> */}
             </a>
           </Link>
           {/* End .logo */}

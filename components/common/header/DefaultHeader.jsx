@@ -29,14 +29,15 @@ const Header = () => {
           <a className="navbar_brand float-start dn-smd">
             <img
               className="logo1 img-fluid  rounded-md"
-              src=  '/assets/images/service-imgs/logoproject.jpeg'
-              // src="/assets/images/ogle-color-logo.png"
+              // src=  '/assets/images/service-imgs/logoproject.jpeg'
+              src="/assets/images/service-imgs/this.jpeg"
+              
               alt="header-logo2.png"
             />
             <img
               className="logo2 img-fluid rounded-md"
-              src=  '/assets/images/service-imgs/logoproject.jpeg'
-              // src="/assets/images/ogle-color-logo.png"
+              // src=  '/assets/images/service-imgs/logoproject.jpeg'
+               src="/assets/images/service-imgs/this.jpeg"
               alt="header-logo2.png"
             />
             <span>Patagonia</span>

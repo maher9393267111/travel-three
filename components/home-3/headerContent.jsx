@@ -84,7 +84,7 @@ const HeaderMenuContentHome = ({ float = "" }) => {
 
 
 
-        <ul className="sub-menu ">
+        {/* <ul className="sub-menu ">
           {home.map((item) => (
             <li key={item.id}>
               <Link href={item.routerPath}>
@@ -98,7 +98,7 @@ const HeaderMenuContentHome = ({ float = "" }) => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </li>
       {/* End .dropitem */}
 
@@ -171,7 +171,11 @@ const HeaderMenuContentHome = ({ float = "" }) => {
 
 
 
-      <li className="dropitem">
+
+
+
+
+      <li className="dropite">
         <a
           href="#"
           className={
@@ -184,10 +188,17 @@ const HeaderMenuContentHome = ({ float = "" }) => {
               : undefined
           }
         >
-          <span className="title">Blog</span>
-          <span className="arrow"></span>
+
+<Link href={'/blogs'}>
+
+          <span className="title">المدونة</span>
+          </Link>
+
+
+
+          {/* <span className="arrow"></span> */}
         </a>
-        <ul className="sub-menu ">
+        {/* <ul className="sub-menu ">
           {blog.map((item) => (
             <li key={item.id}>
               <Link href={item.routerPath}>
@@ -204,7 +215,7 @@ const HeaderMenuContentHome = ({ float = "" }) => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </li>
 
 
@@ -223,7 +234,7 @@ const HeaderMenuContentHome = ({ float = "" }) => {
       {!route.pathname.startsWith("/admin") &&
 
 
-        <li className={`list-inline-item list_s ${float}`}>
+        <li className={`list-inline-item list_s ${float}   relative md:left-[333px]  lg:left-[855px]`}>
           <Link href={'/login'}>
             <a
               href="#"

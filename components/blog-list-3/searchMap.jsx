@@ -48,9 +48,9 @@ console.log('country--->' , selected , country?.name)
 
 
 return (
+  // hidden md:block h-[0px]
 
-
-    <div className="hidden md:block h-[0px]  md:h-[800px]">
+    <div className="  md:h-[800px]">
     <ComposableMap 
     className='   text-black mt-24 md:h-[900px]     bg-blue-500 w-100 border-green-400 border-2'
     >

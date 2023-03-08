@@ -83,7 +83,7 @@ const parseHtml = (desc) => {
 
 
     {blogs?.map((item) => (
-        <div className="col-lg-4 col-md-6" key={item.id}>
+        <div className="col-lg-3 col-md-6" key={item.id}>
           <div className="for_blog feat_property">
             <div className="thumb">
               <Link href={`/blogs/${item.id}`}>
